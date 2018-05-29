@@ -1,0 +1,4 @@
+mk.tests
+hzip.st -t test5.ps.in
+diff test7.etaoin.in test7.etaoin.in.unzipped
+diff test5.ps.in test5.ps.in.unzipped

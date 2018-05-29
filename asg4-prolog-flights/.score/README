@@ -1,0 +1,20 @@
+# Kevin Duong
+# keduong@ucsc.edu
+# Winter 2018
+
+This assignment is a airline reservation system for the Twilight
+Zone Airlines. Given a request [fly( depart, arrive)] the program
+will compute a flight schedule to get from the desired depart city
+to the arrival city in a formatted list as per requirement of the 
+assignment page. The database provided is the one used for the
+Prolog code and uses the given information on airports and flights.
+The logic is driven on the haversine formula to calculate great
+circle distance and as such uses that distance to calculate 
+flight time. There are no overnight flights thus every schedule
+spans less than 24 hours. I have accounted for the 500 mph constant
+plane speed and the 30 minute flight transfers. I have not implemented
+an efficiency function to pull the shortest flight schedule amongst 
+the various flight paths, thus there may be comically inefficient 
+flight paths. The program will pull the first applicable path.
+
+

@@ -1,0 +1,36 @@
+GNU Prolog 1.4.4 (64 bits)
+Compiled Nov  6 2014, 18:04:28 with gcc
+By Daniel Diaz
+Copyright (C) 1999-2013 Daniel Diaz
+| ?- $Id: group1.tests,v 1.2 2016-11-21 14:06:16-08 - - $
+
+yes
+| ?- compiling /afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/database.pl for byte code...
+/afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/database.pl compiled, 76 lines read - 11217 bytes written, 10 ms
+
+yes
+| ?- compiling /afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/functions.pl for byte code...
+/afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/functions.pl compiled, 123 lines read - 13984 bytes written, 10 ms
+
+(3 ms) yes
+| ?- 
+depart  LAX  Los Angeles     12:00
+arrive  ATL  Atlanta         15:53
+depart  ATL  Atlanta         18:30
+arrive  MIA  Miami           19:41
+
+yes
+| ?- Invalid arrival and/or departure airport(s).
+
+(1 ms) no
+| ?- 
+depart  BOS  Boston-Logan    07:30
+arrive  NYC  New York City   07:52
+depart  NYC  New York City   11:00
+arrive  CHI  Chicago         12:27
+
+yes
+| ?- Invalid arrival and/or departure airport(s).
+
+(1 ms) no
+| ?- 

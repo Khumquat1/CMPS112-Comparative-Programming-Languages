@@ -1,0 +1,25 @@
+# Kevin Duong
+# keduong@ucsc.edu
+# Winter 2018
+
+This assignment utilizes the object oriented language of Smalltalk 
+to create a file compression utility, based on Huffman coding to compress
+and decompress files. The file is called hzip.st and is run as follows:
+    Usage : $ hzip.st -tcu inputfile [outfile]
+
+    Options : This program has three difference options, exactly one
+    of which is required to run:
+  
+           -t    Activate compression algorithm. Prints decoding tree.
+           -c    Compress the input file to output or stdout.
+           -u    Assumed compressed file is uncompressed to output.
+           (-d)  Debug information : This feature has been cleaned and
+                 removed upon completion of the assignment.
+
+This assignment was the most challenging program to date for this course
+but unsurprisingly was doable and simple (not easy) given the amount
+of resources in the example files. Most of my code is pulled straight 
+from the aforementioned files. The extension was needed to complete
+the assignment, lots of debugging was needed to have correct functionality
+as well as meet the requirements for the -t option. The output is padded
+as per requirement pages. 

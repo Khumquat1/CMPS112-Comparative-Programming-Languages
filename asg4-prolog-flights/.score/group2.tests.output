@@ -1,0 +1,67 @@
+GNU Prolog 1.4.4 (64 bits)
+Compiled Nov  6 2014, 18:04:28 with gcc
+By Daniel Diaz
+Copyright (C) 1999-2013 Daniel Diaz
+| ?- $Id: group2.tests,v 1.2 2016-11-21 14:06:16-08 - - $
+
+yes
+| ?- compiling /afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/database.pl for byte code...
+/afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/database.pl compiled, 76 lines read - 11217 bytes written, 9 ms
+
+(1 ms) yes
+| ?- compiling /afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/functions.pl for byte code...
+/afs/cats.ucsc.edu/users/o/keduong/CMPS/cs112/asg4-prolog-flights/.score/functions.pl compiled, 123 lines read - 13984 bytes written, 10 ms
+
+(2 ms) yes
+| ?- Invalid arrival and/or departure airport(s).
+
+(1 ms) no
+| ?- 
+depart  SFO  San Francisco   09:00
+arrive  LAX  Los Angeles     09:40
+depart  LAX  Los Angeles     12:00
+arrive  SFO  San Francisco   12:40
+depart  SFO  San Francisco   14:00
+arrive  LAX  Los Angeles     14:40
+depart  LAX  Los Angeles     15:30
+arrive  SJC  San Jose        16:07
+
+(1 ms) yes
+| ?- 
+depart  SJC  San Jose        11:15
+arrive  LAX  Los Angeles     11:52
+
+yes
+| ?- 
+depart  SFO  San Francisco   09:00
+arrive  LAX  Los Angeles     09:40
+depart  LAX  Los Angeles     13:30
+arrive  SEA  Seattle-Tacoma  15:24
+
+(1 ms) yes
+| ?- 
+depart  MIA  Miami           09:00
+arrive  ATL  Atlanta         10:11
+depart  ATL  Atlanta         11:30
+arrive  LAX  Los Angeles     15:23
+
+yes
+| ?- 
+depart  MIA  Miami           09:00
+arrive  ATL  Atlanta         10:11
+depart  ATL  Atlanta         11:30
+arrive  LAX  Los Angeles     15:23
+depart  LAX  Los Angeles     15:30
+arrive  SJC  San Jose        16:07
+
+yes
+| ?- 
+depart  LAX  Los Angeles     12:00
+arrive  SJC  San Jose        12:37
+depart  SJC  San Jose        13:15
+arrive  LAX  Los Angeles     13:52
+depart  LAX  Los Angeles     14:00
+arrive  NYC  New York City   18:55
+
+yes
+| ?- 
